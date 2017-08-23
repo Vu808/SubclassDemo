@@ -4,8 +4,8 @@ public class VideoGame extends Entertainment {
 	private String gameRating;
 	private String genre;
 	
-	public VideoGame(String name, String whatKind, String maturity, String theme) {
-		super(name, whatKind);
+	public VideoGame(String name, String whatKind, String maturity, String theme, int score) {
+		super(name, whatKind, score);
 		gameRating = maturity;
 		genre = theme;
 	}

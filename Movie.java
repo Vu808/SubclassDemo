@@ -6,9 +6,9 @@ public class Movie extends Entertainment {
 	private String movieRating;
 	
 	
-	public Movie(String name, String whatKind, String maturity, String theme) {
+	public Movie(String name, String whatKind, String maturity, String theme, int score) {
 		
-		super(name, whatKind);
+		super(name, whatKind, score);
 		
 		movieRating = maturity;
 		genre = theme;
@@ -18,11 +18,11 @@ public class Movie extends Entertainment {
 		return movieRating;
 	}
 	
-	public int getGenre() {
+	public String getGenre() {
 		return genre;
 	}
 	
-	public void setMovieRating(string maturity) {
+	public void setMovieRating(String maturity) {
 	movieRating = maturity;
 	}
 	
